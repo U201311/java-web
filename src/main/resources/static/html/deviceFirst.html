@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>设备首页</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="../css/modern-business.css" rel="stylesheet">
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <!--script src="../js/jquery.cxselect.js"></script-->
+    <script src="../bootstrap-table-1.11.0/dist/bootstrap-table.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap-table-zh-CN.js"></script>
+    <script src="../js/deviceFirst.js"></script>
+</head>
+
+<body>
+
+<!-- Navigation -->
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">四季青敬老院</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">登录</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="olderFirst.html">老人管理</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="alarmMonitor.html">报警监控</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="deviceFirst.html">设备管理</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="nurseFirst.html">护工管理</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="moniterOlder.html">使用记录查询</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Page Content -->
+<div class="container">
+
+    <!-- Page Heading/Breadcrumbs -->
+    <h1 class="mt-4 mb-3">设备管理
+        <small>页面</small>
+    </h1>
+
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+            <a href="index.html">首页</a>
+        </li>
+        <li class="breadcrumb-item active">关于</li>
+    </ol>
+
+    <!-- Content Row -->
+    <div class="row">
+        <!-- Sidebar Column -->
+        <div class="col-lg-3 mb-4">
+            <div class="list-group">
+                <a href="deviceFirst.html" class="list-group-item active">查询设备信息</a>
+                <a href="deviceBuilde.html" class="list-group-item ">新建机器人设备信息</a>
+                <a href="alarmDeviceBuild.html" class="list-group-item ">新建传感器设备信息</a>
+                <a href="deviceModify.html" class="list-group-item">修改设备信息</a>
+                <a href="deviceDelete.html" class="list-group-item">删除设备信息</a>
+            </div>
+        </div>
+        <!-- Content Column -->
+        <div class="col-lg-9 mb-4">
+            <div class="col-md-41">
+
+                <!-- Search Widget -->
+
+                <div class="card mb-4 " >
+                    <h5 class="card-header">查询</h5>
+                    <div class="card-body ">
+                        <div class="input-group " id="input-group">
+                            <h4 >设备类型：</h4>&nbsp;&nbsp;
+                            <select class="form-group " name="search1" id="search1" >
+                                <option value="未定义">未定义</option>
+                                <option value="助行机器人">助行机器人</option>
+                                <option value="助浴机器人">助浴机器人</option>
+                                <option value="情感陪护机器人">情感陪护机器人</option>
+                                <option value="生理参数采集设备">生理参数采集设备</option>
+                                <option value="大小便离床检测终端">大小便离床检测终端</option>
+                                <option value="洗手间超时检测终端">洗手间超时检测终端</option>
+                                <option value="跌倒检测定位终端">跌倒检测定位终端</option>
+                                <option value="报警提醒终端">报警提醒终端</option>
+                            </select>&nbsp;&nbsp;
+                            <button class="btn btn-secondary" type="button" id="button1">查找</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Side Widget -->
+                <div  class="row">
+                    <div class="col-lg-12">
+                        <table class="table table-striped" id="findDevice">
+                            <thead>
+                            <tr>
+                                <td>设备编号</td>
+                                <td>设备名称</td>
+                                <td>联网状态</td>
+                                <td>服务状态</td>
+                                <td>关联设备</td>
+                                <td>操作</td>
+                            </tr>
+                            </thead>
+                            <tbody>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.row -->
+
+</div>
+<!-- /.container -->
+
+<!-- Footer -->
+<footer class="py-5 bg-dark">
+    <div class="container">
+        <p class="m-0 text-center text-white">www.buaa.edu.cn</p>
+    </div>
+    <!-- /.container -->
+</footer>
+
+<!-- Bootstrap core JavaScript -->
+<script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

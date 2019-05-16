@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>olders-首页</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../css/modern-business.css" rel="stylesheet">
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <!--script src="../js/jquery.cxselect.js"></script-->
+    <script src="../bootstrap-table-1.11.0/dist/bootstrap-table.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap-table-zh-CN.js"></script>
+    <script type="text/javascript" src="../js/olderFirst.js"></script>
+</head>
+
+<body>
+<!-- Navigation -->
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">四季青敬老院</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">登录</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="olderFirst.html">老人管理</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="alarmMonitor.html">报警监控</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="deviceFirst.html">设备管理</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="nurseFirst.html">护工管理</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="moniterOlder.html">使用记录查询</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Page Content -->
+<div class="container">
+
+    <!-- Page Heading/Breadcrumbs -->
+    <h1 class="mt-4 mb-3">老人管理
+        <small>页面</small>
+    </h1>
+
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+            <a href="index.html">首页</a>
+        </li>
+        <li class="breadcrumb-item active">关于</li>
+    </ol>
+
+    <!-- Content Row -->
+    <div class="row">
+        <!-- Sidebar Column -->
+        <div class="col-lg-3 mb-4">
+            <div class="list-group">
+                <a href="olderFirst.html" class="list-group-item active">查询老人信息</a>
+                <a href="olderBuild.html" class="list-group-item">新建老人信息</a>
+                <a href="olderDevice.html" class="list-group-item">老人绑定设备</a>
+                <a href="olderModify.html" class="list-group-item">修改老人信息</a>
+                <a href="olderDelete.html" class="list-group-item">删除老人信息</a>
+            </div>
+        </div>
+        <!-- Content Column -->
+        <div class="col-lg-9 mb-4">
+            <div class="col-md-41">
+
+                <!-- Search Widget -->
+
+                <div class="card mb-4 " >
+                    <h5 class="card-header">查询</h5>
+                    <div class="card-body ">
+                        <form name="sentMessage" id="contactForm"  >
+                            <div class="col-lg-10 col-sm-6 portfolio-item" align="center">
+                                <div class="input-group">
+                                    <label>按姓名查询：</label>
+                                    <select class="form-group" name="allname" id="allname" >
+                                        <option value=""></option>
+                                    </select>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;
+                                    <label>按性别查询：</label>
+                                    <select class="form-group" name="sex" id="sex" >
+                                        <option value=""></option>
+                                        <option value="男">男</option>
+                                        <option value="女">女</option>
+                                    </select>
+                                    &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                                    <label>按护理等级查询：</label>
+                                    <select class="form-group" name="state" id="state" >
+                                        <option value=""></option>
+                                        <option value="全自理（一级）">全自理（一级）</option>
+                                        <option value="半自理（二级）">半自理（二级）</option>
+                                        <option value="半自理（三级）">半自理（三级）</option>
+                                        <option value="一般不能自理（四级）">一般不能自理（四级）</option>
+                                        <option value="不能自理（五级）">不能自理（五级）</option>
+                                        <option value="不能自理（六级）">不能自理（六级）</option>
+                                        <option value="不能自理（七级）">不能自理（七级）</option>
+                                        <option value="不能自理（八级）">不能自理（八级）</option>
+                                    </select>
+                                    &nbsp;&nbsp;&nbsp;
+                                </div>
+
+                                <span class="input-group-btn">
+                            <button class="btn btn-secondary" type="button">查询</button>
+                            </span>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+                <!-- Side Widget -->
+                <div  class="row">
+                    <div class="col-lg-12">
+                        <table class="table table-striped" id="findTable">
+                            <thead>
+                            <tr>
+                                <td>编号</td>
+                                <td>姓名</td>
+                                <td>性别</td>
+                                <td>年龄</td>
+                                <td>入住状态</td>
+                                <td>护理等级</td>
+                                <td>操作</td>
+                            </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.row -->
+
+</div>
+<!-- /.container -->
+
+<!-- Footer -->
+<footer class="py-5 bg-dark">
+    <div class="container">
+        <p class="m-0 text-center text-white">www.buaa.edu.cn</p>
+    </div>
+    <!-- /.container -->
+</footer>
+
+<!-- Bootstrap core JavaScript -->
+<script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

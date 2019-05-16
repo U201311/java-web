@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>olders-首页</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="../css/modern-business.css" rel="stylesheet">
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/bathUse.js"></script>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">Nursing home</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">LOGIN</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="olderFirst.html">老人管理</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="alarmMonitor.html">报警监控</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="deviceFirst.html">设备管理</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="nurseFirst.html">护工管理</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="moniterOlder.html">使用记录查询</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Page Content -->
+<div class="container">
+
+    <!-- Page Heading/Breadcrumbs -->
+    <h1 class="mt-4 mb-3">Information Exchange
+        <small></small>
+    </h1>
+
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+            <a href="index.html">Home</a>
+        </li>
+        <li class="breadcrumb-item active">About</li>
+    </ol>
+
+    <!-- Content Row -->
+    <div class="row">
+        <!-- Sidebar Column -->
+        <div class="col-lg-3 mb-4">
+            <div class="list-group">
+                <a href="alarmMonitor.html" class="list-group-item">Alarm monitoring</a>
+                <a href="bathUse.html" class="list-group-item active">Bath Chair Use</a>
+                <a href="walkUse.html" class="list-group-item">Walking Robot Use</a>
+                <a href="recover.html" class="list-group-item ">Emotional Accompanying Robot</a>
+                <a href="emotion.html" class="list-group-item">Auxiliary Rehabilitation Robot</a>
+            </div>
+        </div>
+        <!-- Content Column -->
+        <div class="col-lg-9 mb-4">
+            <div class="col-md-40">
+                <div class="card mb-4">
+                    <h5 class="card-header">Bath Chair Use</h5>
+                    <div class="card-body">
+                        <form name="sentMessage" id="contactForm"  >
+                            <div class="col-lg-8 col-sm-6 portfolio-item" align="center">
+                                <div class="input-group">
+                                    <label>OlderId：</label>
+                                    <select class="form-control" name="number" id="number" >
+                                        <option value=""></option>
+                                    </select>
+                                </div>
+                                <div class="input-group">
+                                    <label>Name：</label>
+                                    <select class="form-control" name="oldername" id="oldername" >
+                                        <option value=""></option>
+                                    </select>
+                                </div>
+                                <div class="input-group">
+                                    <label>NurseId：</label>
+                                    <label>
+                                        <select class="form-control" name="number" id="nursenumber" >
+                                            <option value=""></option>
+                                        </select>
+                                    </label>
+                                </div>
+                                <div class="input-group">
+                                    <label>NurseName：</label>
+                                    <label>
+                                        <select class="form-control" name="number" id="nursename" >
+                                            <option value=""></option>
+                                        </select>
+                                    </label>
+                                </div>
+                                <div class="input-group">
+                                    <label>Bath Chair Id：</label>
+                                    <label>
+                                        <select class="form-control" name="sex" id="bathnumber" >
+                                            <option value=""></option>
+                                        </select>
+                                    </label>
+                                </div>
+                                <div class="control-group form-group">
+                                    <label>Begin Time</label>
+                                    <input type="time" class="form-control" id="date">
+                                </div>
+                                <div class="control-group form-group">
+                                    <label>Ending Time</label>
+                                    <input type="time" class="form-control" id="dateend">
+                                </div>
+
+                                <div class="control-group form-group">
+                                    <label>Remarks</label>
+                                    <textarea rows="5" cols="100" class="form-control" id="message"  maxlength="999" style="resize:none"></textarea>
+                                </div>
+                                <!--For success/fail messages -->
+                                <button type="reset" class="btn btn-primary" id="MessageCancel">Reset</button>
+                                <button  class="btn btn-primary" id="MessageButtsendon">Save</button>
+                            </div>
+                        </form>
+
+                        <!-- /.row -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /.container -->
+<!-- Footer -->
+<footer class="py-5 bg-dark">
+    <div class="container">
+        <p class="m-0 text-center text-white">www.buaa.edu.cn</p>
+    </div>
+    <!-- /.container -->
+</footer>
+<!-- Bootstrap core JavaScript -->
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>olders-首页</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../css/modern-business.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- Navigation -->
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">四季青敬老院</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">登录</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="olderFirst.html">老人管理</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="alarmMonitor.html">报警监控</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="deviceFirst.html">设备管理</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="nurseFirst.html">护工管理</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="moniterOlder.html">使用记录查询</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Page Content -->
+<div class="container">
+
+    <!-- Page Heading/Breadcrumbs -->
+    <h1 class="mt-4 mb-3">老人管理
+        <small>页面</small>
+    </h1>
+
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+            <a href="index.html">首页</a>
+        </li>
+        <li class="breadcrumb-item active">关于</li>
+    </ol>
+
+    <!-- Content Row -->
+    <div class="row">
+        <!-- Sidebar Column -->
+        <div class="col-lg-3 mb-4">
+            <div class="list-group">
+                <a href="olderFirst.html" class="list-group-item ">查询老人信息</a>
+                <a href="olderBuild.html" class="list-group-item">新建老人信息</a>
+                <a href="olderDevice.html" class="list-group-item active">老人绑定设备</a>
+                <a href="olderModify.html" class="list-group-item">修改老人信息</a>
+                <a href="olderDelete.html" class="list-group-item">删除老人信息</a>
+            </div>
+        </div>
+        <!-- Content Column -->
+        <div class="col-lg-9 mb-4">
+            <div class="col-md-41">
+
+                <!-- Search Widget -->
+
+                <div class="card mb-4">
+                    <h5 class="card-header">绑定设备</h5>
+                    <div class="card-body">
+                        <form name="sentMessage" id="contactForm"  >
+                            <div class="col-lg-8 col-sm-6 portfolio-item" align="center">
+                                <div class="input-group">
+                                    <label>老人编号：</label>
+                                    <select class="form-control" name="oldernumber" id="oldernumber" >
+                                        <option value="未定义">未定义</option>
+                                    </select>
+                                </div>
+                                <div class="input-group">
+                                    <label>老人姓名：</label>
+                                    <select class="form-control" name="oldername" id="oldername" >
+                                        <option value=""></option>
+                                    </select>
+                                </div>
+                                <div class="input-group">
+                                    <h4>位置：</h4>
+                                    <select class="form-control" name="bedfloor" id="bedfloor" >
+                                        <option value="楼层">楼层</option>
+                                    </select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <select class="form-control" name="bedroad" id="bedroad" >
+                                        <option value="排">排</option>
+                                    </select>&nbsp;&nbsp;
+                                    <select class="form-control" name="room" id="room" >
+                                        <option value="房间号码">房间号码</option>
+                                    </select>&nbsp;&nbsp;&nbsp;
+                                    <select class="form-control" name="bednumber" id="bednumber" >
+                                        <option value=""></option>
+                                        <option value="1号床">1号床</option>
+                                        <option value="2号床">2号床</option>
+                                    </select>
+                                </div>
+
+                                <div>
+                                    <div>
+                                        <div class="input-group">
+                                            <h5>大小便离床检测终端：</h5>
+                                            <label>
+                                                <select class="form-control" name="search1" id="search1" >
+                                                </select>
+                                            </label>
+
+                                        </div>
+                                        <div class="input-group">
+                                            <h5>洗手间超时检测终端：</h5>
+                                            <label>
+                                                <select class="form-control" name="search2" id="search2" >
+                                                </select>
+                                            </label>
+                                        </div>
+                                        <div class="input-group">
+                                            <h5>跌到检测定位终端：</h5>
+                                            <label>
+                                                <select class="form-control" name="search3" id="search3" >
+                                                </select>
+                                            </label>
+                                        </div>
+                                        <div class="card mb-4">
+                                            <h5 class="card-header">当前状态</h5>
+                                            <div class="card-body" id="devicestate">
+                                                已绑定
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="input-group-btn">
+                            <button type="reset" class="btn btn-secondary" >修改</button>
+                            </span>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <span class="input-group-btn">
+                            <button class="btn btn-secondary" type="button">新建</button>
+                            </span>
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+
+                <!-- Side Widget -->
+                <div  class="row">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!-- /.row -->
+
+</div>
+<!-- /.container -->
+
+<!-- Footer -->
+<footer class="py-5 bg-dark">
+    <div class="container">
+        <p class="m-0 text-center text-white">www.buaa.edu.cn</p>
+    </div>
+    <!-- /.container -->
+</footer>
+
+<!-- Bootstrap core JavaScript -->
+<script src="../vendor/jquery/jquery.min.js"></script>
+<script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../js/olderDevice.js"></script>
+</body>
+
+</html>

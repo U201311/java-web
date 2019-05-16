@@ -1,0 +1,99 @@
+{margin:0;padding:0;border:0}
+ul{list-style: none;}
+body{
+    font-family: 'ROBOT', sans-serif;
+    font-size: 100%;
+    font:inherit;
+    background: url(../images/1.jpg);
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    transaction:0.5s all;
+    -webkit-transition: 0.5s all;
+}
+
+.clear {
+    clear:both;
+}
+
+/*--header---*/
+h1 {
+    font-family: '微软雅黑';
+    font-size: 3em;
+    color: #3C2F24;
+    text-align:center;
+    margin:2em 0em 1em 0em;
+}
+
+.element {
+    width: 60%;
+    margin: 0 auto 7em;
+    padding:2em;
+    display:flex;
+    flex-flow:row;
+}
+
+.element-left {
+    margin:0 1.5%;
+    flex: 3.3;
+    order: 1;
+
+}
+
+.element-right {
+    margin:0 1.5%;
+    flex: 3.3;
+    order: 2;
+}
+
+.element-last {
+    margin:0 1.5%;
+    flex: 3.3;
+    order: 3;
+}
+
+.edit {
+    margin:0 auto;
+    background: #fff;
+}
+
+form {
+    padding :10% 4% 8% 4%;
+}
+
+form li {
+    list-style: none;
+    width:100%;
+    font-weight:500;
+    border:1px solid #ccc;
+    background: #fff;
+    margin:1em 0;
+}
+
+input [type="text"] {
+    width: 83%;
+    padding:1em 0em 1em 1.7em;
+    font-size: 15px;
+    font-weight: 500;
+    color:#858282;
+}
+
+.submit input[type="submit"] {
+    width:100%;
+    padding: 21px 20px;
+    background:#ef8d32;
+    font-size: 20px;
+    font-weight:400;
+    color:#fff;
+    cursor: pointer;
+    transition: 0.1s all;
+    -webkit-transition: 0.1s all;
+}
+
+input [type="submit"] {
+    background: #ee5a32;
+}
